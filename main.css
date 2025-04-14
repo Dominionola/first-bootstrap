@@ -1,0 +1,7 @@
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: none; /* Removes container's max-width on lg+ */
+    margin-left: 0; /* Optional: adjust if you want full-width */
+    margin-right: 0;
+  }
+}
