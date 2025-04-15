@@ -14,21 +14,26 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="main.css
+    "
+    />
   </head>
   <body>
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light p-2">
       <div
         class="container-fluid d-flex justify-content-between align-items-center"
       >
         <!-- Left: Logo + Nav links -->
         <div class="d-flex align-items-center">
-          <a class="navbar-brand me-4" href="#">
-            <img src="images/logo.png" alt="Logo" height="50" />
+          <a href="#" class="navbar-brand">
+            <img src="images/logo.png" alt="Logo" class="" />
           </a>
 
-          <ul class="navbar-nav flex-row gap-3">
+          <ul class="navbar-nav flex-row gap-3 nav-collapse">
             <li class="nav-item">
               <a class="nav-link text-black fw-bold" href="#">Products</a>
             </li>
@@ -36,14 +41,14 @@
             <!-- Correct dropdown setup -->
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-black fw-bold"
+                class="nav-link dropdown-toggle text-black fw-bold d-flex align-items-center"
                 href="#"
                 id="useCasesDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Use Cases
+                Use Cases <i class="bi bi-chevron-down ms-1 dropdown-icon"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="useCasesDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -71,11 +76,19 @@
 
         <!-- Right: Buttons -->
         <div class="d-flex align-items-center gap-2">
-          <a class="text-black fw-bold nav-link" href="#">Talk to an expert</a>
-          <a class="btn btn-primary px-4 py-3" href="#">Start Building</a>
+          <a class="text-black fw-bold nav-link text-nowrap" href="#"
+            >Talk to an expert</a
+          >
+          <a class="nav-collapse btn btn-primary px-4 py-3 text-nowrap" href="#"
+            >Start Building</a
+          >
+
+          <i class="bi bi-list ms-3 me-3 fs-4"></i>
         </div>
       </div>
     </nav>
+
+    <script src="main.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
