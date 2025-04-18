@@ -1,9 +1,55 @@
 body {
-  background: radial-gradient(circle at top left, #1b1f3b, #0f1125);
+  background: radial-gradient(circle at top left, #1b1f3b, #0f172a);
   color: white;
-  
 }
 
-.mycolor{
+.mycolor {
   color: #6e71b1;
+}
+
+.tech-scroll-wrapper {
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tech-scroll {
+  animation: scroll-left-right 20s linear infinite;
+  white-space: nowrap;
+}
+
+.tech-logo {
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Keyframe for scrolling left to right */
+@keyframes slide-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-on-small {
+    animation: slide-left-right 20s infinite ease-in-out;
+  }
+}
+
+nav i{
+  background: none;
+  color: #fff;
+}
+i{
+  background: #232c4d;
+  color: #525cf3;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 5px;
 }
