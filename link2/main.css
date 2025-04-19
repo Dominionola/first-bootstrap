@@ -1,0 +1,33 @@
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Show dropdown on hover */
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Transition for icon animation */
+.hover-dropdown .dropdown-icon {
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 992px) {
+  .navbar-brand img {
+    width: 75px;
+    height: auto;
+  }
+
+   .nav-collapse {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: none; /* Removes container's max-width on lg+ */
+    margin-left: 0; /* Optional: adjust if you want full-width */
+    margin-right: 0;
+  }
+}

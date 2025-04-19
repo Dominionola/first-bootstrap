@@ -23,72 +23,404 @@
   <body>
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-light p-2">
-      <div
-        class="container-fluid d-flex justify-content-between align-items-center"
-      >
-        <!-- Left: Logo + Nav links -->
-        <div class="d-flex align-items-center">
-          <a href="#" class="navbar-brand">
-            <img src="images/logo.png" alt="Logo" class="" />
-          </a>
+    <nav class="navbar navbar-expand-lg p-2 mb-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div class="logo d-flex align-items-center">
+          <img src="/images/web3logo.png" alt="" height="40px" />
+          <p class="mb-0 ms-2 fw-bold fs-3">
+            Web3<span class="text-primary fw-normal">Forms</span>
+          </p>
+        </div>
 
-          <ul class="navbar-nav flex-row gap-3 nav-collapse">
+        <!-- Nav items -->
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav gap-4">
             <li class="nav-item">
-              <a class="nav-link text-black fw-bold" href="#">Products</a>
-            </li>
-
-            <!-- Correct dropdown setup -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-black fw-bold d-flex align-items-center"
-                href="#"
-                id="useCasesDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <a class="nav-link active" href="#" style="color: #ccc"
+                >Features</a
               >
-                Use Cases <i class="bi bi-chevron-down ms-1 dropdown-icon"></i>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" style="color: #ccc"
+                >Example</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" style="color: #ccc"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-3 py-2 rounded"
+                href="#"
+                style="background-color: #4d45e2"
+              >
+                Help & Support
               </a>
-              <ul class="dropdown-menu" aria-labelledby="useCasesDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another use case</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-black fw-bold" href="#">Developer</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-black fw-bold" href="#">Resources</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-black fw-bold" href="#">Pricing</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-black fw-bold" href="#">Customers</a>
             </li>
           </ul>
         </div>
-
-        <!-- Right: Buttons -->
-        <div class="d-flex align-items-center gap-2">
-          <a class="text-black fw-bold nav-link text-nowrap" href="#"
-            >Talk to an expert</a
-          >
-          <a class="nav-collapse btn btn-primary px-4 py-3 text-nowrap" href="#"
-            >Start Building</a
-          >
-
-          <i class="bi bi-list ms-3 me-3 fs-4"></i>
-        </div>
+        <i class="bi bi-list fs-2 d-lg-none" style="cursor: pointer"></i>
       </div>
     </nav>
 
-    <script src="main.js"></script>
+    <section class="hero">
+      <div class="container text-center">
+        <h1 class="my-3">Contact Forms for Stactic Website</h1>
+        <p class="text-center" style="color: #ccc">
+          Receive form submissions directly in your email inbox <br />
+          without any server or back-end code, its free!
+        </p>
+        <a
+          class="mt-3 nav-link text-white px-4 py-2 rounded d-inline-block"
+          style="
+            background: linear-gradient(80deg, #e15687 0%, #ff758c 100%);
+            font-size: 0.8rem;
+            border-radius: 2px;
+          "
+          href="#"
+        >
+          Create your Access Key
+        </a>
+
+        <p class="mt-2" style="font-size: 0.5rem; color: #ccc">
+          No Signup required
+        </p>
+        <div class="">
+          <img
+            src="/images/first code ss.png"
+            alt="Screenshot"
+            width="400px"
+            class="w-sm-100 w-md-80 w-lg-45 w-xl-40 img-fluid"
+          />
+        </div>
+        <p style="font-size: 0.7rem; margin-top: 20px">Host anywhere</p>
+        <div class="tech-scroll-wrapper overflow-hidden">
+          <div
+            class="tech-scroll d-flex gap-5 justify-content-center align-items-center animate-on-small"
+          >
+            <img
+              src="/images/vercel-svgrepo-com.svg"
+              alt=""
+              width="70"
+              class="tech-logo"
+            />
+            <img
+              src="/images/netlify.png"
+              alt=""
+              width="70"
+              class="tech-logo"
+            />
+            <img
+              src="/images/aws-svgrepo-com.svg"
+              alt=""
+              width="30"
+              class="tech-logo"
+            />
+            <img
+              src="/images/github-svgrepo-com.svg"
+              alt=""
+              width="30"
+              class="tech-logo"
+            />
+            <img
+              src="/images/DigitalO.png"
+              alt=""
+              width="100"
+              class="tech-logo"
+            />
+            <img
+              src="/images/cloudflare.png"
+              alt=""
+              width="55"
+              class="tech-logo"
+            />
+            <img
+              src="/images/godaddy.png"
+              alt=""
+              width="70"
+              class="tech-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid my-5">
+      <div class="container">
+        <div class="row">
+          <div class="box col-12 col-md-4 py-4">
+            <i class="bi bi-code-slash"></i>
+            <p class="mt-3" style="font-size: 0.9rem; font-weight: bold">
+              No Backend Code
+            </p>
+            <p style="font-size: 0.8rem; color: #6b7191">
+              You already know! setting up form is pain. Web3Forms works without
+              any Server or backend code like PHP.
+            </p>
+          </div>
+
+          <div class="box col-12 col-md-4 py-4">
+            <i class="bi bi-database"></i>
+            <p class="mt-3" style="font-size: 0.9rem; font-weight: bold">
+              No Backend Code
+            </p>
+            <p style="font-size: 0.8rem; color: #6b7191">
+              You already know! setting up form is pain. Web3Forms works without
+              any Server or backend code like PHP.
+            </p>
+          </div>
+
+          <div class="box col-12 col-md-4 py-4">
+            <i class="bi bi-person"></i>
+            <p class="mt-3" style="font-size: 0.9rem; font-weight: bold">
+              No Backend Code
+            </p>
+            <p style="font-size: 0.8rem; color: #6b7191">
+              You already know! setting up form is pain. Web3Forms works without
+              any Server or backend code like PHP.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="box col-12 col-md-4 py-4">
+            <i class="bi bi-cursor"></i>
+            <p class="mt-3" style="font-size: 0.9rem; font-weight: bold">
+              No Backend Code
+            </p>
+            <p style="font-size: 0.8rem; color: #6b7191">
+              You already know! setting up form is pain. Web3Forms works without
+              any Server or backend code like PHP.
+            </p>
+          </div>
+
+          <div class="box col-12 col-md-4 py-4">
+            <i class="bi bi-cloud"></i>
+            <p class="mt-3" style="font-size: 0.9rem; font-weight: bold">
+              No Backend Code
+            </p>
+            <p style="font-size: 0.8rem; color: #6b7191">
+              You already know! setting up form is pain. Web3Forms works without
+              any Server or backend code like PHP.
+            </p>
+          </div>
+
+          <div class="box col-12 col-md-4 py-4">
+            <i class="bi bi-shield-check"></i>
+            <p class="mt-3" style="font-size: 0.9rem; font-weight: bold">
+              No Backend Code
+            </p>
+            <p style="font-size: 0.8rem; color: #757a93">
+              You already know! setting up form is pain. Web3Forms works without
+              any Server or backend code like PHP.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="description md-5">
+      <div class="container text-center md-5">
+        <div class="dis-box">
+          <p class="fs-4">How it works</p>
+          <p style="font-size: 0.8rem; color: #757a93">
+            Easy as 1 2 3. Just follow the steps and you're done
+          </p>
+        </div>
+
+        <div class="dis-box mb-5">
+          <p
+            style="
+              font-size: 1.5rem;
+              color: #4d45e2;
+              background: #232c4d;
+              padding: 5px 15px;
+              border-radius: 50%;
+              display: inline-block;
+            "
+          >
+            1
+          </p>
+          <p class="fs-5">Create Success Key</p>
+          <p style="font-size: 0.8rem; color: #757a93">
+            Access key will be sent to your email address.
+          </p>
+          <div
+            class="mx-auto p-4 rounded shadow"
+            style="width: 100%; max-width: 350px; background: #1d283a"
+          >
+            <form action="#">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                style="padding: 10px 0px 10px 5"
+                class="form-control mb-3"
+                placeholder="Email Address"
+              />
+              <button
+                type="submit"
+                class="btn btn-primary w-100 mb-3"
+                style="
+                  background: #4d45e2;
+                  border: none !important;
+                  padding: 10px 0 10px 0;
+                "
+              >
+                Create Access Key
+              </button>
+              <p class="text-muted small mb-0" style="color: #ccc !important">
+                By submitting this form, you agree to our terms and privacy
+                policy as well as give consent to reach your marketing purposes.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <div class="dis-box mb-5">
+          <p
+            style="
+              font-size: 1.5rem;
+              color: #4d45e2;
+              background: #232c4d;
+              padding: 5px 15px;
+              border-radius: 50%;
+              display: inline-block;
+            "
+          >
+            2
+          </p>
+          <p class="">Create Sccess Key</p>
+          <p style="font-size: 0.8rem; color: #757a93">
+            Create a form in your website with our form endpiont inside action
+            attribute.
+          </p>
+          <img
+            src="/images/second code.png"
+            alt="Screenshot"
+            width="500px"
+            class="w-sm-100 w-md-80 w-lg-45 w-xl-40 img-fluid pd-3"
+          />
+          <div class="mt-2">
+            <a
+              class="nav-link"
+              style="
+                font-size: 0.7rem;
+                color: #ccc;
+                padding: 2px 4px;
+                background: #757a93;
+                display: inline;
+                border-radius: 20px;
+              "
+              href=""
+              >Show Advanced Example</a
+            >
+          </div>
+        </div>
+
+        <div class="dis-box">
+          <p
+            style="
+              font-size: 1.5rem;
+              color: #8a97d7;
+              background: #232c4d;
+              padding: 5px 15px;
+              border-radius: 50%;
+              display: inline-block;
+              margin-top: 1rem !important;
+            "
+          >
+            3
+          </p>
+          <p class="">Add your Access Key</p>
+          <p style="font-size: 0.8rem; color: #757a93">
+            Add your access key to start receiving email submissions.
+          </p>
+          <img
+            src="/images/input code.png"
+            alt="Screenshot"
+            width="430px"
+            class="w-sm-100 w-md-80 w-lg-45 w-xl-40 img-fluid pd-3"
+          />
+          <a
+            class="mt-3 nav-link text-white px-4 py-2 rounded d-inline-block"
+            style="
+              background: linear-gradient(80deg, #e15687 0%, #ff758c 100%);
+              font-size: 0.8rem;
+              border-radius: 2px;
+            "
+            href="#"
+          >
+            See Detailed Docs
+          </a>
+
+          <div class="testimonial mt-5">
+            <img
+              style="
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+              "
+              src="/images/profile 4.jpg"
+              alt=""
+              srcset=""
+            />
+            <p class="small mt-3" style="color: #757a93">
+              "I cannot believe i pulled off my landing page with working lead
+              <br />
+              generation form so fast. I used to spend hundreds of dollars
+              <br />
+              everytime just for the form."
+            </p>
+            <p class="" style="font-size: 0.7rem">Micheal, Indie Hacker</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 100px" class="pricing">
+      <div class="container text-center">
+        <p class="fs-4">Pricing</p>
+        <p style="font-size: 0.8rem; color: #757a93">
+          Free for Ever. Only Pay for Extra Features.
+        </p>
+
+       
+        <div class="d-flex justify-content-center align-items-center" style="gap: 20px; height: 550px;">
+          <div
+            class="p-3 d-flex flex-column justify-content-center"
+            style="border: 1px solid #2a374a; height: 450px; width: 220px;"
+          >
+            <p>PERSONAL</p>
+            <p class="fs-4">Free</p>
+            <ul class="feature-list list-unstyled">
+              <li>Unlimited Forms</li>
+            </ul>
+          </div>
+        
+          <div
+            class="p-3"
+            style="
+              background: #2a374a;
+              color: white;
+              height: 500px;
+              width: 220px;
+            "
+          >
+            <p>PRO</p>
+            <p class="fs-4">$10/month</p>
+          </div>
+        </div>
+        
+        
+        
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
